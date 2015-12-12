@@ -108,6 +108,20 @@
     _block(btn);
 }
 
+
+- (void)didPresentAlertView:(UIAlertView *)alert_view {
+  // There is a bug in iOS 8 that prevents the keyboard from appearing when
+  // an alert view with a text field appears. This is the prescribed workaround
+  // for iOS8.
+  if (clcg_os_geq(@"8") == YES && clcg_os_geq(@"9") == NO) {
+    UITextRange *text_range = [[alert_view textFieldAtIndex:0] selectedTextRange];
+    [[alert_view textFieldAtIndex:0] selectAll:nil];
+    [[alert_view textFieldAtIndex:0] setSelectedTextRange:text_range];
+  }
+}
+
+
+
 #endif
 
 @end
