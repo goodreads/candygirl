@@ -96,12 +96,14 @@
 +(BOOL)hasPushNotificationsBadgeEnabled
 {
   if (clcg_os_geq(@"8")) {
+#pragma deploymate push "ignored-api-availability"
     if ([self hasPushNotificationsEnabled] == NO) {
       return NO;
     } else {
       UIApplication *app = [UIApplication sharedApplication];
       return (app.currentUserNotificationSettings.types & UIUserNotificationTypeBadge);
     }
+#pragma deploymate pop
   } else {
     UIApplication *app = [UIApplication sharedApplication];
     return ([app enabledRemoteNotificationTypes] & UIRemoteNotificationTypeBadge);
