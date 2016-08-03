@@ -82,31 +82,17 @@
 
 +(BOOL)hasPushNotificationsEnabled
 {
-  if (clcg_os_geq(@"8")) {
-#pragma deploymate push "ignored-api-availability"
-    return [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
-#pragma deploymate pop
-  } else {
-    return ([[UIApplication sharedApplication] enabledRemoteNotificationTypes]
-            != UIRemoteNotificationTypeNone);
-  }
+  return [[UIApplication sharedApplication] isRegisteredForRemoteNotifications];
 }
 
 
 +(BOOL)hasPushNotificationsBadgeEnabled
 {
-  if (clcg_os_geq(@"8")) {
-#pragma deploymate push "ignored-api-availability"
-    if ([self hasPushNotificationsEnabled] == NO) {
-      return NO;
-    } else {
-      UIApplication *app = [UIApplication sharedApplication];
-      return (app.currentUserNotificationSettings.types & UIUserNotificationTypeBadge);
-    }
-#pragma deploymate pop
+  if ([self hasPushNotificationsEnabled] == NO) {
+    return NO;
   } else {
     UIApplication *app = [UIApplication sharedApplication];
-    return ([app enabledRemoteNotificationTypes] & UIRemoteNotificationTypeBadge);
+    return (app.currentUserNotificationSettings.types & UIUserNotificationTypeBadge);
   }
 }
 
@@ -116,20 +102,12 @@
   CLCGP(@"Registering for Push Notifications...");
 
   UIApplication *app = [UIApplication sharedApplication];
-  if (clcg_os_geq(@"8")) {
-#pragma deploymate push "ignored-api-availability"
-    [app registerUserNotificationSettings:
-     [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound
-                                                   | UIUserNotificationTypeAlert
-                                                   | UIUserNotificationTypeBadge)
-                                       categories:nil]];
-    [app registerForRemoteNotifications];
-#pragma deploymate pop
-  } else {
-    [app registerForRemoteNotificationTypes: (UIRemoteNotificationTypeBadge
-                                              | UIRemoteNotificationTypeAlert
-                                              | UIRemoteNotificationTypeSound)];
-  }
+  [app registerUserNotificationSettings:
+    [UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeSound
+                                                  | UIUserNotificationTypeAlert
+                                                  | UIUserNotificationTypeBadge)
+                                      categories:nil]];
+  [app registerForRemoteNotifications];
 }
 
 
@@ -177,15 +155,9 @@
 +(BOOL)isAppBadgeEnabled
 {
   UIApplication *app = [UIApplication sharedApplication];
-  if (clcg_os_geq(@"8")) {
-#pragma deploymate push "ignored-api-availability"
-    UIUserNotificationSettings *notif_settings = [app currentUserNotificationSettings];
-    return ([app isRegisteredForRemoteNotifications]
-            && (notif_settings.types & UIUserNotificationTypeBadge));
-#pragma deploymate pop
-  } else {
-    return [app enabledRemoteNotificationTypes] & UIRemoteNotificationTypeBadge;
-  }
+  UIUserNotificationSettings *notif_settings = [app currentUserNotificationSettings];
+  return ([app isRegisteredForRemoteNotifications]
+          && (notif_settings.types & UIUserNotificationTypeBadge));
 }
 
 
