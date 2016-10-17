@@ -29,6 +29,8 @@
 //==============================================================================
 
 
+NS_ASSUME_NONNULL_BEGIN
+
 @protocol CLCGUIViewLayout
 
 /*!
@@ -73,7 +75,7 @@
  */
 -(void)centerVerticallyInRect:(CGRect)rect;
 
--(void)resizeHeightForText:(NSString*)txt font:(UIFont*)font;
+-(void)resizeHeightForText:(nullable NSString*)txt font:(UIFont*)font DEPRECATED_ATTRIBUTE;
 -(UIView*)findFirstResponder;
 
 -(CGFloat)x;
@@ -138,13 +140,13 @@
  
  @param spinner The spinner to be used; if nil, a new spinner will be created.
  */
--(UIActivityIndicatorView*)showSpinner:(UIActivityIndicatorView*)spinner;
+-(UIActivityIndicatorView*)showSpinner:(nullable UIActivityIndicatorView*)spinner;
 
 /*! 
  Removes the given spinner from the subviews of this view.
  @param spinner Spinner to be removed. No-op if spinner is nil.
  */
--(void)hideSpinner:(UIActivityIndicatorView*)spinner;
+-(void)hideSpinner:(nullable UIActivityIndicatorView*)spinner;
 
 /*!
  Adds a light gray border around the view. 
@@ -183,8 +185,8 @@
  */
 -(void)putTextView:(UIView*)subview
  useAttributedText:(BOOL)use_attributed
-         toRightOf:(UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
-             below:(UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert
+         toRightOf:(nullable UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
+             below:(nullable UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert
           maxWidth:(CGFloat)max_w
          lineLimit:(NSUInteger)line_limit;
 
@@ -198,8 +200,8 @@
  @param padding_vert     Vertical padding between vert_align_view and subview.
  */
 -(void)putView:(UIView*)subview
-     toRightOf:(UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
-         below:(UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert;
+     toRightOf:(nullable UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
+         below:(nullable UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert;
 
 /*!
  @abstract 
@@ -213,8 +215,8 @@
  @param max_w            The max width available to the subview.
  */
 -(void)putView:(UIView<CLCGUIViewLayout>*)subview
-     toRightOf:(UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
-         below:(UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert
+     toRightOf:(nullable UIView*)horiz_align_view horizPadding:(CGFloat)padding_horiz
+         below:(nullable UIView*)vert_align_view   vertPadding:(CGFloat)padding_vert
       maxWidth:(CGFloat)max_w;
 
 /*!
@@ -224,4 +226,7 @@
 -(void)addTarget:(id)target forTapAction:(SEL)action;
 
 @end
+
+NS_ASSUME_NONNULL_END
+
 

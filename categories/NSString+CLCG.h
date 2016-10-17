@@ -28,6 +28,7 @@
  POSSIBILITY OF SUCH DAMAGE.
  */
 
+NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (Candygirl)
 
@@ -98,7 +99,7 @@
  This is a wrapper for -boundingRectWithSize:options:attributes:context: and
  sizeWithFont:forWidth:lineBreakMode:.
  */
--(CGSize)sizeWithMaxW:(CGFloat)max_w font:(UIFont*)font;
+-(CGSize)sizeWithMaxW:(CGFloat)max_w font:(nullable UIFont*)font;
 
 /*!
  Same as @link sizeWithMaxW:maxH:font:paragraphStyle: @/link with a default
@@ -106,7 +107,7 @@
  */
 -(CGSize)sizeWithMaxW:(CGFloat)max_w
                  maxH:(CGFloat)max_h
-                 font:(UIFont*)font;
+                 font:(nullable UIFont*)font;
 
 /*!
  Measures the size of this string with a max width/height assuming word
@@ -117,10 +118,12 @@
  */
 -(CGSize)sizeWithMaxW:(CGFloat)max_w
                  maxH:(CGFloat)max_h
-                 font:(UIFont*)font
+                 font:(nullable UIFont*)font
        paragraphStyle:(NSParagraphStyle*)style;
 
 
 #endif
 
 @end
+
+NS_ASSUME_NONNULL_END

@@ -29,26 +29,28 @@
 extern "C" {
 #endif
 
+  NS_ASSUME_NONNULL_BEGIN
+  
   // given a url string, append the given parameter to it.
   extern NSString *clcg_str_append2url(NSString *url,
                                        NSString *param_name,
                                        NSString *param_val);
 
   // returns YES if string are equal (or both nil), NO otherwise
-  extern BOOL clcg_str_eq(NSString *s, NSString *t);
+  extern BOOL clcg_str_eq(NSString * _Nullable s, NSString * _Nullable t);
 
   // Converts the contents of the object (e.g. NSData) into a string.
   extern NSString *clcg_str_from(id data);
   
   // trims string left and right.
-  extern NSString *clcg_str_trim(NSString *s);
+  extern NSString * _Nullable clcg_str_trim(NSString * _Nullable s);
   
   // returns a substring no longer than max_len; if max_len > [s length], 
   // returns the whole string.
-  extern NSString *clcg_str_sub(NSString *s, unsigned max_len);
+  extern NSString * _Nullable clcg_str_sub(NSString * _Nullable s, unsigned max_len);
 
   // is the string nil, empty string, or whitespace chars only.
-  extern BOOL clcg_str_isblank(NSString *s);
+  extern BOOL clcg_str_isblank(NSString * _Nullable s);
 
   // adds possessive suffix ('s or ')
   extern NSString* clcg_str_addpossessive(NSString *s);
@@ -59,6 +61,8 @@ extern "C" {
   // returns the same string with the first character capitalized.
   extern NSString *clcg_str_capitalize_firstword(NSString *s);
 
+  NS_ASSUME_NONNULL_END
+  
 #ifdef __cplusplus
 }
 #endif
