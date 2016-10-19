@@ -26,13 +26,15 @@
 //  Created by Ettore Pasquini on 10/31/12.
 //
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface CLCGModel : NSObject <NSCopying>
 {
   // for search purposes: concatenation of searchable data
   NSString    *mSearchable;
 }
 
-@property(nonatomic,copy) NSString *searchable;
+@property(nonatomic,copy,nullable) NSString *searchable;
 
 -(BOOL)containsWords:(NSArray*)words;
 -(BOOL)matches:(NSPredicate*)pred;
@@ -43,3 +45,5 @@
 -(BOOL)containsPrefix:(NSString*)prefix;
 
 @end
+
+NS_ASSUME_NONNULL_END
