@@ -31,7 +31,6 @@
 
 #import "CLCGVC.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 /*! Default number of items to be loaded in table-view. */
 #define PER_PAGE_DEFAULT  20
@@ -48,8 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface CLCGTableViewVC : CLCGVC<UITableViewDelegate,UITableViewDataSource>
 
-@property(nonatomic,retain,nullable) IBOutlet UITableView *tableView;
+@property(nonatomic,retain) IBOutlet UITableView *tableView;
 @property(nonatomic,retain,readonly) NSMutableArray *items;
+
+/*! Still the designated initializer. Defaults style to UITableViewStylePlain. */
+-(id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil;
 
 /*! Use this if you don't use a nib. */
 -(id)initWithStyle:(UITableViewStyle)style;
@@ -68,6 +70,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*! Deselects all currently selected rows. */
 -(void)deselectAll:(BOOL)animated;
+
+/*!
+ @discussion Handles loading the next page in case pagination is supported
+  and the user tapped on the "more" row, otherwise calls
+  @link tableView::didSelectNormalRow: @/link
+ */
+-(void)tableView:(UITableView*)tv didSelectRowAtIndexPath:(NSIndexPath*)ip;
 
 
 //------------------------------------------------------------------------------
@@ -124,4 +133,3 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-NS_ASSUME_NONNULL_END
