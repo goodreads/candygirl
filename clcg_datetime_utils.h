@@ -46,8 +46,6 @@
 extern "C" {
 #endif
 
-NS_ASSUME_NONNULL_BEGIN
-  
 /*! Get the year out of a date object. */
 NSInteger clcg_date_year(NSDate *d);
 
@@ -75,8 +73,6 @@ NSString *clcg_ago_format(NSDate *d);
  "ago_format_minimal.seconds".
  */
 NSString *clcg_ago_format_minimal(NSDate *d);
- 
-NS_ASSUME_NONNULL_END
 
 #ifdef __cplusplus
 }

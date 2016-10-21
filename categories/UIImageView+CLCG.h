@@ -26,7 +26,6 @@
 //  Created by Ettore Pasquini on 9/22/11.
 //
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImageView (Candygirl)
 
@@ -44,5 +43,3 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)keepWidthTrimHeight:(CGFloat)maxviewh;
 
 @end
-
-NS_ASSUME_NONNULL_END

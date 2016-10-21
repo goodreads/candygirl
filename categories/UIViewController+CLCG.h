@@ -25,8 +25,6 @@
 //  Created by Ettore Pasquini on 1/23/13.
 //
 
-NS_ASSUME_NONNULL_BEGIN
-
 @interface UIViewController (Candygirl)
 
 /*!
@@ -80,5 +78,3 @@ NS_ASSUME_NONNULL_BEGIN
 -(BOOL)isVisible;
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -30,13 +30,11 @@
 extern "C" {
 #endif
 
-  NS_ASSUME_NONNULL_BEGIN
-  
   /*! @abstract Show/hide spinner for network activity in status bar. */
   void clcg_show_network_activity(BOOL show);
 
   /** Removes a key from the prefs and synchronizes them. */
-  void clcg_removepref(NSString * _Nullable key);
+  void clcg_removepref(NSString *key);
   
   /** Adds `value' to the array pref identified by `key'. */
   void clcg_savepref_in_array(NSString *key, NSString *value);
@@ -96,8 +94,6 @@ extern "C" {
    */
   NSString *clcg_device_name();
 
-  NS_ASSUME_NONNULL_END
-  
 #ifdef __cplusplus
 }
 #endif

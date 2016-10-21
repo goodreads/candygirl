@@ -26,7 +26,6 @@
 //  Created by Ettore Pasquini on 9/29/12.
 //
 
-NS_ASSUME_NONNULL_BEGIN
 
 typedef NS_ENUM(NSInteger, CLCGBarButtonItemState) {
   CLCGBarButtonItemStateReady = 1,
@@ -55,13 +54,13 @@ typedef NS_ENUM(NSInteger, CLCGBarButtonItemState) {
                           action:(SEL)action
                           height:(CGFloat)h;
 
--(id)initWithTitle:(nullable NSString *)title
+-(id)initWithTitle:(NSString *)title
              style:(UIBarButtonItemStyle)style
             target:(id)target
             action:(SEL)action
             height:(CGFloat)height;
 
--(id)initWithImage:(nullable UIImage *)img
+-(id)initWithImage:(UIImage *)img
              style:(UIBarButtonItemStyle)style
             target:(id)target
             action:(SEL)action
@@ -70,5 +69,3 @@ typedef NS_ENUM(NSInteger, CLCGBarButtonItemState) {
 -(UIActivityIndicatorView*)spinner;
 
 @end
-
-NS_ASSUME_NONNULL_END
