@@ -28,7 +28,7 @@
 
 @interface UILabel (Candygirl)
 
--(void)resizeHeightForText;
+-(void)resizeHeightForText DEPRECATED_ATTRIBUTE;
 
 -(void)sizeToFitWidth:(CGFloat)w;
 

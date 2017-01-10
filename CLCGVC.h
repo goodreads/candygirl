@@ -29,6 +29,9 @@
 #import <UIKit/UIKit.h>
 
 
+NS_ASSUME_NONNULL_BEGIN
+
+
 enum CLCGLoadingState {
   CLCG_NOT_LOADED,
   CLCG_LOADING,
@@ -85,12 +88,12 @@ enum CLCGLoadingState {
 //------------------------------------------------------------------------------
 #pragma mark - Loading view / Spinner
 
-@property(nonatomic,strong) IBOutlet UIView *spinnerContainer;
-@property(nonatomic,strong) IBOutlet UIActivityIndicatorView *spinner;
+@property(nonatomic,strong,nullable) IBOutlet UIView *spinnerContainer;
+@property(nonatomic,strong,nullable) IBOutlet UIActivityIndicatorView *spinner;
 @property(nonatomic) UIActivityIndicatorViewStyle  spinnerStyle;
-@property(nonatomic,strong) UIColor *spinnerBackgroundColor;
-@property(nonatomic,strong) IBOutlet UILabel *spinnerLabel1;
-@property(nonatomic,strong) IBOutlet UILabel *spinnerLabel2;
+@property(nonatomic,strong,nullable) UIColor *spinnerBackgroundColor;
+@property(nonatomic,strong,nullable) IBOutlet UILabel *spinnerLabel1;
+@property(nonatomic,strong,nullable) IBOutlet UILabel *spinnerLabel2;
 
 /*!
  * If show == YES, shows and aligns the spinny indicator to the center
@@ -118,14 +121,14 @@ enum CLCGLoadingState {
  * If msg is non-nil, this method shows and aligns the given message to the
  * center of the screen. Otherwise, it removes the message if it was displayed.
  */
--(void)showEmptyMessage:(NSString*)msg;
+-(void)showEmptyMessage:(nullable NSString*)msg;
 
 /*!
  * If msg is non-nil, this method shows and aligns the given message to the
  * center of the screen. Otherwise, it removes the message if it was displayed.
  * It also displays a Tap to Reload label.
  */
--(void)showErrorMessage:(NSString*)msg;
+-(void)showErrorMessage:(nullable NSString*)msg;
 
 /*!
  This method creates the view to render the message for no data/error case.
@@ -153,7 +156,7 @@ enum CLCGLoadingState {
 
 
 
-@property(nonatomic,weak) id<CLCGPopoverContentDelegate> popoverContentDelegate;
+@property(nonatomic,weak,nullable) id<CLCGPopoverContentDelegate> popoverContentDelegate;
 
 /*!
  * Releases all the retained subviews of this view controller. This is called
@@ -164,4 +167,7 @@ enum CLCGLoadingState {
 
 
 @end
+
+
+NS_ASSUME_NONNULL_END
 
