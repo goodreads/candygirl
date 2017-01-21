@@ -76,7 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)centerVerticallyInRect:(CGRect)rect;
 
 -(void)resizeHeightForText:(nullable NSString*)txt font:(UIFont*)font DEPRECATED_ATTRIBUTE;
--(UIView*)findFirstResponder;
+-(nullable UIView*)findFirstResponder;
 
 -(CGFloat)x;
 -(void)setX:(CGFloat)x;

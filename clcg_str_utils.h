@@ -40,7 +40,7 @@ extern "C" {
   extern BOOL clcg_str_eq(NSString * _Nullable s, NSString * _Nullable t);
 
   // Converts the contents of the object (e.g. NSData) into a string.
-  extern NSString *clcg_str_from(id data);
+  extern NSString * _Nullable clcg_str_from(id data);
   
   // trims string left and right.
   extern NSString * _Nullable clcg_str_trim(NSString * _Nullable s);
