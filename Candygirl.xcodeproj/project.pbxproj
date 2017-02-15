@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6255FEB73B64BAC43A105334 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E4CAE5EA04C043949A6AD6 /* libPods.a */; };
 		E5D025BC1AEF3A2400154583 /* libCandygirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D025B01AEF3A2400154583 /* libCandygirl.a */; };
 		E5D0262A1AEF3A9B00154583 /* clcg_addressbook_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025EA1AEF3A9B00154583 /* clcg_addressbook_utils.m */; };
 		E5D0262B1AEF3A9B00154583 /* clcg_bundle_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025EC1AEF3A9B00154583 /* clcg_bundle_utils.m */; };
@@ -57,9 +56,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		61E4CAE5EA04C043949A6AD6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		66E83D59C93E0F93B1F7DEB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		96D57838F33BFDD5A33E3CD7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		9189AB5D99C12E00FE58A513 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = "file.swift-version"; path = ".swift-version"; sourceTree = "<group>"; };
+		A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Pods/../build/Debug-iphoneos/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
+		A6DABA291E54C7E0006FB14E /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "Pods/../build/Debug-iphoneos/Reachability/libReachability.a"; sourceTree = "<group>"; };
+		A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Build/Products/Debug-iphonesimulator/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
 		E5D025B01AEF3A2400154583 /* libCandygirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCandygirl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025BB1AEF3A2400154583 /* CandygirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandygirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025C11AEF3A2400154583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -114,6 +114,9 @@
 		E5D026491AEF3CE300154583 /* candygirl-prefix-header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "candygirl-prefix-header.pch"; sourceTree = "<group>"; };
 		E5ECD0F71B26778300762A8A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E5ECD0F81B2677A400762A8A /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
+		F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candygirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl.release.xcconfig"; sourceTree = "<group>"; };
+		F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candygirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl.debug.xcconfig"; sourceTree = "<group>"; };
+		FB13D1C4CF03CC324592D67D /* libPods-Candygirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Candygirl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +124,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6255FEB73B64BAC43A105334 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,23 +138,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08576C0B79903C51F250C584 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				61E4CAE5EA04C043949A6AD6 /* libPods.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		23E522CF161F06FE90E67FDE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				E5ECD0F71B26778300762A8A /* Podfile */,
 				E5ECD0F81B2677A400762A8A /* Podfile.lock */,
-				96D57838F33BFDD5A33E3CD7 /* Pods.debug.xcconfig */,
-				66E83D59C93E0F93B1F7DEB9 /* Pods.release.xcconfig */,
+				F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */,
+				F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A62BE7B4AF7ABE59F1DC59F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */,
+				A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */,
+				A6DABA291E54C7E0006FB14E /* libReachability.a */,
+				FB13D1C4CF03CC324592D67D /* libPods-Candygirl.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E595C5681B5E3AB2007605AB /* legacy / deprecated */ = {
@@ -182,7 +187,8 @@
 				E5D025BF1AEF3A2400154583 /* CandygirlTests */,
 				E5D025B11AEF3A2400154583 /* Products */,
 				23E522CF161F06FE90E67FDE /* Pods */,
-				08576C0B79903C51F250C584 /* Frameworks */,
+				A62BE7B4AF7ABE59F1DC59F9 /* Frameworks */,
+				9189AB5D99C12E00FE58A513 /* .swift-version */,
 			);
 			sourceTree = "<group>";
 		};
@@ -294,11 +300,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5D025C41AEF3A2400154583 /* Build configuration list for PBXNativeTarget "Candygirl" */;
 			buildPhases = (
-				A87B12B3C758414F3340E358 /* Check Pods Manifest.lock */,
+				4324DF8DC15463190A116885 /* [CP] Check Pods Manifest.lock */,
 				E5D025AC1AEF3A2400154583 /* Sources */,
 				E5D025AD1AEF3A2400154583 /* Frameworks */,
 				E5D025AE1AEF3A2400154583 /* CopyFiles */,
-				AFCE447C2201B306E8013AA5 /* Copy Pods Resources */,
+				1FB0505EBD2CD32E0531C9C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -373,34 +379,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A87B12B3C758414F3340E358 /* Check Pods Manifest.lock */ = {
+		1FB0505EBD2CD32E0531C9C3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AFCE447C2201B306E8013AA5 /* Copy Pods Resources */ = {
+		4324DF8DC15463190A116885 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -478,6 +484,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -531,6 +538,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -557,21 +565,18 @@
 		};
 		E5D025C51AEF3A2400154583 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 96D57838F33BFDD5A33E3CD7 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ASIHTTPRequest",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASIHTTPRequest",
+				);
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
-					"-l\"Pods-ASIHTTPRequest\"",
-					"-l\"Pods-Reachability\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -580,21 +585,18 @@
 		};
 		E5D025C61AEF3A2400154583 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 66E83D59C93E0F93B1F7DEB9 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ASIHTTPRequest",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASIHTTPRequest",
+				);
 				OTHER_LDFLAGS = (
+					"$(inherited)",
 					"-ObjC",
-					"-l\"Pods-ASIHTTPRequest\"",
-					"-l\"Pods-Reachability\"",
-					"-framework",
-					"\"CFNetwork\"",
-					"-framework",
-					"\"CoreGraphics\"",
-					"-framework",
-					"\"MobileCoreServices\"",
-					"-framework",
-					"\"SystemConfiguration\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
