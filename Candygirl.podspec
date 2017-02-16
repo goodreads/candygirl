@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.author           = { "Ettore Pasquini" => "Ettore Pasquini" }
   #s.documentation_url = "https://github.com/goodreads/candygirl"
   #s.social_media_url = "https://github.com/goodreads/candygirl"
-  #s.source           = { :git => "https://github.com/goodreads/candygirl", :commit => '25d3c34b71c524f9996c1b2ad99a62a65cb3231f' }
+  s.source           = { :git => "https://github.com/goodreads/candygirl", :tag => 'pod1.1' }
   s.ios.deployment_target     = '9.0'
   s.requires_arc = true
   s.source_files     = '**/*.{h,m}'
