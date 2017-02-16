@@ -48,11 +48,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9189AA24289E94202AA806A1 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 		9189AB5D99C12E00FE58A513 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = "file.swift-version"; path = ".swift-version"; sourceTree = "<group>"; };
 		A6422A2B1E563CE8006C8690 /* clcg_bundle_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clcg_bundle_utils.h; sourceTree = "<group>"; };
-		A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Pods/../build/Debug-iphoneos/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
-		A6DABA291E54C7E0006FB14E /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "Pods/../build/Debug-iphoneos/Reachability/libReachability.a"; sourceTree = "<group>"; };
-		A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Build/Products/Debug-iphonesimulator/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
 		E5D025B01AEF3A2400154583 /* libCandygirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCandygirl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025BB1AEF3A2400154583 /* CandygirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandygirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025C11AEF3A2400154583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,8 +77,6 @@
 		E5D026011AEF3A9B00154583 /* CLCGBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGBarButtonItem.m; sourceTree = "<group>"; };
 		E5D026021AEF3A9B00154583 /* CLCGCachedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGCachedViewModel.h; sourceTree = "<group>"; };
 		E5D026031AEF3A9B00154583 /* CLCGCachedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGCachedViewModel.m; sourceTree = "<group>"; };
-		E5D026061AEF3A9B00154583 /* CLCGCellCommonLayouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGCellCommonLayouter.h; sourceTree = "<group>"; };
-		E5D026071AEF3A9B00154583 /* CLCGCellCommonLayouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGCellCommonLayouter.m; sourceTree = "<group>"; };
 		E5D026101AEF3A9B00154583 /* CLCGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGModel.h; sourceTree = "<group>"; };
 		E5D026111AEF3A9B00154583 /* CLCGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGModel.m; sourceTree = "<group>"; };
 		E5D026121AEF3A9B00154583 /* CLCGMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGMoreCell.h; sourceTree = "<group>"; };
@@ -93,8 +89,6 @@
 		E5D026191AEF3A9B00154583 /* CLCGVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGVC.m; sourceTree = "<group>"; };
 		E5D026421AEF3AB000154583 /* categories */ = {isa = PBXFileReference; lastKnownFileType = folder; path = categories; sourceTree = "<group>"; };
 		E5D026491AEF3CE300154583 /* candygirl-prefix-header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "candygirl-prefix-header.pch"; sourceTree = "<group>"; };
-		E5ECD0F71B26778300762A8A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
-		E5ECD0F81B2677A400762A8A /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,32 +110,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		23E522CF161F06FE90E67FDE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				E5ECD0F71B26778300762A8A /* Podfile */,
-				E5ECD0F81B2677A400762A8A /* Podfile.lock */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A62BE7B4AF7ABE59F1DC59F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */,
-				A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */,
-				A6DABA291E54C7E0006FB14E /* libReachability.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E595C5681B5E3AB2007605AB /* legacy / deprecated */ = {
-			isa = PBXGroup;
-			children = (
-				E5D026061AEF3A9B00154583 /* CLCGCellCommonLayouter.h */,
-				E5D026071AEF3A9B00154583 /* CLCGCellCommonLayouter.m */,
-			);
-			name = "legacy / deprecated";
 			sourceTree = "<group>";
 		};
 		E5D025A71AEF3A2400154583 = {
@@ -154,12 +127,11 @@
 				E5D026471AEF3B6400154583 /* models */,
 				E5D026451AEF3B0100154583 /* controllers */,
 				E5D026441AEF3AD200154583 /* views & graphics */,
-				E595C5681B5E3AB2007605AB /* legacy / deprecated */,
 				E5D025BF1AEF3A2400154583 /* CandygirlTests */,
 				E5D025B11AEF3A2400154583 /* Products */,
-				23E522CF161F06FE90E67FDE /* Pods */,
 				A62BE7B4AF7ABE59F1DC59F9 /* Frameworks */,
 				9189AB5D99C12E00FE58A513 /* .swift-version */,
+				9189AA24289E94202AA806A1 /* LICENSE.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -301,7 +273,7 @@
 		E5D025A81AEF3A2400154583 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Cubelogic;
 				TargetAttributes = {
 					E5D025AF1AEF3A2400154583 = {
@@ -396,19 +368,23 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -426,8 +402,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "9e58c1ad-0222-4e2a-a498-976f9af19acb";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,12 +427,14 @@
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_EXPLICIT_OWNERSHIP_TYPE = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_RECEIVER_WEAK = YES;
 				CLANG_WARN_OBJC_REPEATED_USE_OF_WEAK = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
@@ -463,6 +442,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
@@ -474,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PROVISIONING_PROFILE = "9e58c1ad-0222-4e2a-a498-976f9af19acb";
 				SDKROOT = iphoneos;
@@ -488,12 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/ASIHTTPRequest",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
-					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASIHTTPRequest",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -507,12 +482,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/ASIHTTPRequest",
-					"$(PROJECT_DIR)/build/Debug-iphoneos/Reachability",
-					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/ASIHTTPRequest",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -535,6 +505,7 @@
 				);
 				INFOPLIST_FILE = CandygirlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cubelogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -548,6 +519,7 @@
 				);
 				INFOPLIST_FILE = CandygirlTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cubelogic.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
