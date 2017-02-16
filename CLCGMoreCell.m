@@ -26,10 +26,10 @@
 //  Created by Ettore Pasquini on 10/29/12.
 //
 
-#import "clcg_bundle_utils.h"
 #import "clcg_macros.h"
 #import "UIView+CLCG.h"
 #import "CLCGMoreCell.h"
+#import "clcg_bundle_utils.h"
 
 
 @implementation CLCGMoreCell

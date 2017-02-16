@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E5D025BC1AEF3A2400154583 /* libCandygirl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D025B01AEF3A2400154583 /* libCandygirl.a */; };
-		E5D0262A1AEF3A9B00154583 /* clcg_addressbook_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025EA1AEF3A9B00154583 /* clcg_addressbook_utils.m */; };
-		E5D0262B1AEF3A9B00154583 /* clcg_bundle_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025EC1AEF3A9B00154583 /* clcg_bundle_utils.m */; };
 		E5D0262C1AEF3A9B00154583 /* clcg_datetime_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025EE1AEF3A9B00154583 /* clcg_datetime_utils.m */; };
 		E5D0262D1AEF3A9B00154583 /* clcg_debug.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025F01AEF3A9B00154583 /* clcg_debug.m */; };
 		E5D0262E1AEF3A9B00154583 /* clcg_device_utils.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025F21AEF3A9B00154583 /* clcg_device_utils.m */; };
@@ -21,15 +19,9 @@
 		E5D026341AEF3A9B00154583 /* CLCGAPNHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D025FF1AEF3A9B00154583 /* CLCGAPNHelper.m */; };
 		E5D026351AEF3A9B00154583 /* CLCGBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026011AEF3A9B00154583 /* CLCGBarButtonItem.m */; };
 		E5D026361AEF3A9B00154583 /* CLCGCachedViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026031AEF3A9B00154583 /* CLCGCachedViewModel.m */; };
-		E5D026371AEF3A9B00154583 /* CLCGCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026051AEF3A9B00154583 /* CLCGCell.m */; };
-		E5D026381AEF3A9B00154583 /* CLCGCellCommonLayouter.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026071AEF3A9B00154583 /* CLCGCellCommonLayouter.m */; };
-		E5D0263A1AEF3A9B00154583 /* CLCGImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0260B1AEF3A9B00154583 /* CLCGImageLoader.m */; };
-		E5D0263B1AEF3A9B00154583 /* CLCGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0260D1AEF3A9B00154583 /* CLCGImageView.m */; };
-		E5D0263C1AEF3A9B00154583 /* CLCGLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D0260F1AEF3A9B00154583 /* CLCGLayer.m */; };
 		E5D0263D1AEF3A9B00154583 /* CLCGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026111AEF3A9B00154583 /* CLCGModel.m */; };
 		E5D0263E1AEF3A9B00154583 /* CLCGMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026131AEF3A9B00154583 /* CLCGMoreCell.m */; };
 		E5D0263F1AEF3A9B00154583 /* CLCGTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026151AEF3A9B00154583 /* CLCGTableViewVC.m */; };
-		E5D026401AEF3A9B00154583 /* CLCGTogglerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026171AEF3A9B00154583 /* CLCGTogglerView.m */; };
 		E5D026411AEF3A9B00154583 /* CLCGVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D026191AEF3A9B00154583 /* CLCGVC.m */; };
 /* End PBXBuildFile section */
 
@@ -57,16 +49,13 @@
 
 /* Begin PBXFileReference section */
 		9189AB5D99C12E00FE58A513 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = "file.swift-version"; path = ".swift-version"; sourceTree = "<group>"; };
+		A6422A2B1E563CE8006C8690 /* clcg_bundle_utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clcg_bundle_utils.h; sourceTree = "<group>"; };
 		A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Pods/../build/Debug-iphoneos/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
 		A6DABA291E54C7E0006FB14E /* libReachability.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libReachability.a; path = "Pods/../build/Debug-iphoneos/Reachability/libReachability.a"; sourceTree = "<group>"; };
 		A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libASIHTTPRequest.a; path = "Build/Products/Debug-iphonesimulator/ASIHTTPRequest/libASIHTTPRequest.a"; sourceTree = "<group>"; };
 		E5D025B01AEF3A2400154583 /* libCandygirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCandygirl.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025BB1AEF3A2400154583 /* CandygirlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CandygirlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5D025C11AEF3A2400154583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E5D025E91AEF3A9B00154583 /* clcg_addressbook_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clcg_addressbook_utils.h; sourceTree = "<group>"; };
-		E5D025EA1AEF3A9B00154583 /* clcg_addressbook_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clcg_addressbook_utils.m; sourceTree = "<group>"; };
-		E5D025EB1AEF3A9B00154583 /* clcg_bundle_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clcg_bundle_utils.h; sourceTree = "<group>"; };
-		E5D025EC1AEF3A9B00154583 /* clcg_bundle_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clcg_bundle_utils.m; sourceTree = "<group>"; };
 		E5D025ED1AEF3A9B00154583 /* clcg_datetime_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clcg_datetime_utils.h; sourceTree = "<group>"; };
 		E5D025EE1AEF3A9B00154583 /* clcg_datetime_utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = clcg_datetime_utils.m; sourceTree = "<group>"; };
 		E5D025EF1AEF3A9B00154583 /* clcg_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clcg_debug.h; sourceTree = "<group>"; };
@@ -90,16 +79,8 @@
 		E5D026011AEF3A9B00154583 /* CLCGBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGBarButtonItem.m; sourceTree = "<group>"; };
 		E5D026021AEF3A9B00154583 /* CLCGCachedViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGCachedViewModel.h; sourceTree = "<group>"; };
 		E5D026031AEF3A9B00154583 /* CLCGCachedViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGCachedViewModel.m; sourceTree = "<group>"; };
-		E5D026041AEF3A9B00154583 /* CLCGCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGCell.h; sourceTree = "<group>"; };
-		E5D026051AEF3A9B00154583 /* CLCGCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGCell.m; sourceTree = "<group>"; };
 		E5D026061AEF3A9B00154583 /* CLCGCellCommonLayouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGCellCommonLayouter.h; sourceTree = "<group>"; };
 		E5D026071AEF3A9B00154583 /* CLCGCellCommonLayouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGCellCommonLayouter.m; sourceTree = "<group>"; };
-		E5D0260A1AEF3A9B00154583 /* CLCGImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGImageLoader.h; sourceTree = "<group>"; };
-		E5D0260B1AEF3A9B00154583 /* CLCGImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGImageLoader.m; sourceTree = "<group>"; };
-		E5D0260C1AEF3A9B00154583 /* CLCGImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGImageView.h; sourceTree = "<group>"; };
-		E5D0260D1AEF3A9B00154583 /* CLCGImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGImageView.m; sourceTree = "<group>"; };
-		E5D0260E1AEF3A9B00154583 /* CLCGLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGLayer.h; sourceTree = "<group>"; };
-		E5D0260F1AEF3A9B00154583 /* CLCGLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGLayer.m; sourceTree = "<group>"; };
 		E5D026101AEF3A9B00154583 /* CLCGModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGModel.h; sourceTree = "<group>"; };
 		E5D026111AEF3A9B00154583 /* CLCGModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLCGModel.m; sourceTree = "<group>"; };
 		E5D026121AEF3A9B00154583 /* CLCGMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLCGMoreCell.h; sourceTree = "<group>"; };
@@ -114,9 +95,6 @@
 		E5D026491AEF3CE300154583 /* candygirl-prefix-header.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "candygirl-prefix-header.pch"; sourceTree = "<group>"; };
 		E5ECD0F71B26778300762A8A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		E5ECD0F81B2677A400762A8A /* Podfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile.lock; sourceTree = "<group>"; };
-		F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candygirl.release.xcconfig"; path = "Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl.release.xcconfig"; sourceTree = "<group>"; };
-		F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candygirl.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl.debug.xcconfig"; sourceTree = "<group>"; };
-		FB13D1C4CF03CC324592D67D /* libPods-Candygirl.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Candygirl.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +121,6 @@
 			children = (
 				E5ECD0F71B26778300762A8A /* Podfile */,
 				E5ECD0F81B2677A400762A8A /* Podfile.lock */,
-				F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */,
-				F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -155,7 +131,6 @@
 				A6DABA2C1E54CC8E006FB14E /* libASIHTTPRequest.a */,
 				A6DABA281E54C7E0006FB14E /* libASIHTTPRequest.a */,
 				A6DABA291E54C7E0006FB14E /* libReachability.a */,
-				FB13D1C4CF03CC324592D67D /* libPods-Candygirl.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -163,12 +138,8 @@
 		E595C5681B5E3AB2007605AB /* legacy / deprecated */ = {
 			isa = PBXGroup;
 			children = (
-				E5D026041AEF3A9B00154583 /* CLCGCell.h */,
-				E5D026051AEF3A9B00154583 /* CLCGCell.m */,
 				E5D026061AEF3A9B00154583 /* CLCGCellCommonLayouter.h */,
 				E5D026071AEF3A9B00154583 /* CLCGCellCommonLayouter.m */,
-				E5D0260E1AEF3A9B00154583 /* CLCGLayer.h */,
-				E5D0260F1AEF3A9B00154583 /* CLCGLayer.m */,
 			);
 			name = "legacy / deprecated";
 			sourceTree = "<group>";
@@ -220,10 +191,7 @@
 		E5D026431AEF3ABE00154583 /* functions */ = {
 			isa = PBXGroup;
 			children = (
-				E5D025E91AEF3A9B00154583 /* clcg_addressbook_utils.h */,
-				E5D025EA1AEF3A9B00154583 /* clcg_addressbook_utils.m */,
-				E5D025EB1AEF3A9B00154583 /* clcg_bundle_utils.h */,
-				E5D025EC1AEF3A9B00154583 /* clcg_bundle_utils.m */,
+				A6422A2B1E563CE8006C8690 /* clcg_bundle_utils.h */,
 				E5D025ED1AEF3A9B00154583 /* clcg_datetime_utils.h */,
 				E5D025EE1AEF3A9B00154583 /* clcg_datetime_utils.m */,
 				E5D025EF1AEF3A9B00154583 /* clcg_debug.h */,
@@ -254,10 +222,6 @@
 				E5D026171AEF3A9B00154583 /* CLCGTogglerView.m */,
 				E5D026001AEF3A9B00154583 /* CLCGBarButtonItem.h */,
 				E5D026011AEF3A9B00154583 /* CLCGBarButtonItem.m */,
-				E5D0260A1AEF3A9B00154583 /* CLCGImageLoader.h */,
-				E5D0260B1AEF3A9B00154583 /* CLCGImageLoader.m */,
-				E5D0260C1AEF3A9B00154583 /* CLCGImageView.h */,
-				E5D0260D1AEF3A9B00154583 /* CLCGImageView.m */,
 			);
 			name = "views & graphics";
 			sourceTree = "<group>";
@@ -300,11 +264,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E5D025C41AEF3A2400154583 /* Build configuration list for PBXNativeTarget "Candygirl" */;
 			buildPhases = (
-				4324DF8DC15463190A116885 /* [CP] Check Pods Manifest.lock */,
 				E5D025AC1AEF3A2400154583 /* Sources */,
 				E5D025AD1AEF3A2400154583 /* Frameworks */,
 				E5D025AE1AEF3A2400154583 /* CopyFiles */,
-				1FB0505EBD2CD32E0531C9C3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -378,39 +340,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1FB0505EBD2CD32E0531C9C3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Candygirl/Pods-Candygirl-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4324DF8DC15463190A116885 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		E5D025AC1AEF3A2400154583 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -424,21 +353,13 @@
 				E5D0262C1AEF3A9B00154583 /* clcg_datetime_utils.m in Sources */,
 				E5D0262E1AEF3A9B00154583 /* clcg_device_utils.m in Sources */,
 				E5D026341AEF3A9B00154583 /* CLCGAPNHelper.m in Sources */,
-				E5D0262B1AEF3A9B00154583 /* clcg_bundle_utils.m in Sources */,
 				E5D0262D1AEF3A9B00154583 /* clcg_debug.m in Sources */,
-				E5D026381AEF3A9B00154583 /* CLCGCellCommonLayouter.m in Sources */,
 				E5D026321AEF3A9B00154583 /* clcg_viewport.m in Sources */,
-				E5D0263C1AEF3A9B00154583 /* CLCGLayer.m in Sources */,
 				E5D026361AEF3A9B00154583 /* CLCGCachedViewModel.m in Sources */,
-				E5D0262A1AEF3A9B00154583 /* clcg_addressbook_utils.m in Sources */,
-				E5D026401AEF3A9B00154583 /* CLCGTogglerView.m in Sources */,
 				E5D0263D1AEF3A9B00154583 /* CLCGModel.m in Sources */,
 				E5D0263F1AEF3A9B00154583 /* CLCGTableViewVC.m in Sources */,
-				E5D026371AEF3A9B00154583 /* CLCGCell.m in Sources */,
 				E5D026311AEF3A9B00154583 /* clcg_str_utils.m in Sources */,
 				E5D026351AEF3A9B00154583 /* CLCGBarButtonItem.m in Sources */,
-				E5D0263B1AEF3A9B00154583 /* CLCGImageView.m in Sources */,
-				E5D0263A1AEF3A9B00154583 /* CLCGImageLoader.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,7 +486,6 @@
 		};
 		E5D025C51AEF3A2400154583 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7D5F7E8F052B483428FF153 /* Pods-Candygirl.debug.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
 				LIBRARY_SEARCH_PATHS = (
@@ -585,7 +505,6 @@
 		};
 		E5D025C61AEF3A2400154583 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F27F14D58D09098163D93D24 /* Pods-Candygirl.release.xcconfig */;
 			buildSettings = {
 				GCC_PREFIX_HEADER = "candygirl-prefix-header.pch";
 				LIBRARY_SEARCH_PATHS = (

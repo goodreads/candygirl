@@ -24,8 +24,8 @@
 // POSSIBILITY OF SUCH DAMAGE.
 
 #import "clcg_device_utils.h"
-#import "CLCGAlertView.h"
 #import "clcg_bundle_utils.h"
+#import "CLCGAlertView.h"
 
 @implementation CLCGAlertView 
 

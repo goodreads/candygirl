@@ -28,10 +28,9 @@
 
 #import <tgmath.h>
 #import <QuartzCore/QuartzCore.h>
-
+#import "clcg_bundle_utils.h"
 #import "clcg_debug.h"
 #import "clcg_macros.h"
-#import "clcg_bundle_utils.h"
 #import "clcg_gfx.h"
 #import "clcg_viewport.h"
 #import "UIView+CLCG.h"

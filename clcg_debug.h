@@ -49,7 +49,7 @@ extern "C" {
 // debugging macros
 
 // Uncomment this if you want to turn on verbose logging
-//#define CLCG_LOGGING 1;
+#define CLCG_LOGGING 1;
 
 #ifdef CLCG_LOGGING
 #define CLCG_P(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
