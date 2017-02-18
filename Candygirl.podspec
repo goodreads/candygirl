@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   #s.documentation_url = "https://github.com/goodreads/candygirl"
   #s.social_media_url = "https://github.com/goodreads/candygirl"
   s.source           = { :git => "https://github.com/goodreads/candygirl", :tag => 'pod1.1' }
-  s.ios.deployment_target     = '9.0'
+  s.ios.deployment_target     = '8.0'
   s.requires_arc = true
   s.source_files     = '**/*.{h,m}'
 end
